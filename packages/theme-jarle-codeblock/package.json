@@ -1,0 +1,38 @@
+{
+  "name": "docusaurus-theme-jarle-codeblock",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": {
+    "directory": "packages/theme-jarle",
+    "type": "git",
+    "url": "https://github.com/4Catalyzer/docusaurus-plugin-react-metadata.git"
+  },
+  "author": "4Catalyzer",
+  "license": "MIT",
+  "scripts": {
+    "build": "4c build src",
+    "prepublishOnly": "yarn run build",
+    "tdd": "jest --watch",
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "preset": "@4c/jest-preset",
+    "testEnvironment": "jsdom"
+  },
+  "devDependencies": {
+    "@4c/babel-preset": "^8.0.3",
+    "@4c/cli": "^2.0.1",
+    "@4c/jest-preset": "^1.4.5",
+    "@4c/prettier-config": "^1.1.0",
+    "jest": "^26.0.0"
+  },
+  "dependencies": {
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.70",
+    "clsx": "^1.1.1",
+    "jarle": "^1.1.0"
+  }
+}
