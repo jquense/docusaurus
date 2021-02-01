@@ -1,7 +1,7 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-param-reassign */
 // @ts-ignore
-import fs from 'fs/promises';
+import { promises as fs } from 'fs';
 import path from 'path';
 
 import type { LoadContext, Plugin } from '@docusaurus/types';
@@ -79,7 +79,7 @@ export default (
   return {
     name: PLUGIN,
     getPathsToWatch() {
-      return [].concat(src, watchPaths);
+      return [].concat(src, watchPaths || []);
     },
     getThemePath() {
       return path.join(__dirname, '..', 'lib', 'theme');
