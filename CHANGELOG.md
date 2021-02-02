@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/compare/v1.0.2...v1.0.3) (2021-02-02)
+
+
+### Bug Fixes
+
+* missing tags ([c7d9573](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/commit/c7d95735bf0e40bc7ed0dfbd4f57456bf69fd854))
+* prism theme prop ([a04ffde](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/commit/a04ffdeefa1eec4bc07aa16917c8732957a2e77f))
+
+
+
+
+
 ## [1.0.2](https://github.com/jquense/docusaurus-plugins/compare/v1.0.1...v1.0.2) (2021-02-01)
 
 
