@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { Editor, Error, Preview, Provider, InfoMessage } from 'jarle';
 import clsx from 'clsx';
+import { Editor, Error, InfoMessage, Preview, Provider } from 'jarle';
+import * as React from 'react';
 
 import styles from './styles.module.css';
 
@@ -20,6 +20,7 @@ export interface Props
   previewClassName?: string;
   errorClassName?: string;
   codeFirst?: boolean;
+  prismTheme?: any;
 }
 
 const Playground = React.forwardRef(
@@ -32,6 +33,7 @@ const Playground = React.forwardRef(
       previewClassName,
       errorClassName,
       codeFirst = false,
+      prismTheme,
       ...props
     }: Props,
     ref: React.Ref<HTMLDivElement>,
@@ -53,7 +55,11 @@ const Playground = React.forwardRef(
         ref={ref}
         className={clsx(className, styles.playground, inline && styles.inline)}
       >
-        <Provider code={children.replace(/\n$/, '')} {...props}>
+        <Provider
+          code={children.replace(/\n$/, '')}
+          theme={prismTheme}
+          {...props}
+        >
           {!codeFirst ? (
             <>
               {preview}
