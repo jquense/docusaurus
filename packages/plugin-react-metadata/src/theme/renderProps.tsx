@@ -1,11 +1,11 @@
 import sortBy from 'lodash/sortBy';
 import React from 'react';
 
+import { Prop } from '../types';
+import { docletsToMap, getTypeName } from '../utils';
 import DefaultValue from './DefaultPropValue';
 import PropTypeValue from './PropTypeValue';
 import TypescriptTypeValue, { TokenMap } from './TypescriptTypeValue';
-import { Prop } from '../types';
-import { docletsToMap, getTypeName } from '../utils';
 
 const isElementType = (
   name: string | undefined,
@@ -32,7 +32,7 @@ export default function renderProps(
   return sortBy(propsData, 'name')
     .filter(
       (prop) =>
-        !prop.tags.find((d) => d.name === 'private' || d.name === 'ignore'),
+        !prop.tags?.find((d) => d.name === 'private' || d.name === 'ignore'),
     )
     .map((propData) => {
       const { name, type, defaultValue, description, tags, tsType } = propData;
