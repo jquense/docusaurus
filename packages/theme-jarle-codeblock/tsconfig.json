@@ -2,7 +2,7 @@
   "extends": "@4c/tsconfig/web",
   "compilerOptions": {
     "rootDir": "src",
-    "types": ["@docusaurus/module-type-aliases"]
+    "types": ["@docusaurus/module-type-aliases", "node"]
   },
   "include": ["src"]
 }

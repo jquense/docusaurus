@@ -28,7 +28,7 @@
     "@4c/cli": "^2.0.1",
     "@4c/jest-preset": "^1.4.5",
     "@4c/prettier-config": "^1.1.0",
-    "jest": "^26.0.0"
+    "jest": "^27.0.4"
   },
   "dependencies": {
     "@docusaurus/module-type-aliases": "^2.0.0-alpha.70",

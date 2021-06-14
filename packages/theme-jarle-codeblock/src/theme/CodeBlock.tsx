@@ -1,12 +1,13 @@
 /* eslint-disable import/no-unresolved */
 
-import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import usePrismTheme from '@theme/hooks/usePrismTheme';
-import Playground from '@theme/Playground';
-import CodeLiveScope from '@theme/CodeLiveScope';
 // @ts-ignore
 import CodeBlock from '@theme-init/CodeBlock';
+import CodeLiveScope from '@theme/CodeLiveScope';
+import Playground from '@theme/Playground';
+import usePrismTheme from '@theme/hooks/usePrismTheme';
+// @ts-ignore
+import React from 'react';
 
 const getLanguage = (className = '') => {
   const [, mode] = className.match(/language-(\w+)/) || [];
