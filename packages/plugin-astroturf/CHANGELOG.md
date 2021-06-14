@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/jquense/docusaurus-plugins/compare/v1.0.3...v1.1.0) (2021-06-14)
+
+
+### Features
+
+* bump stuff ([5ea7f15](https://github.com/jquense/docusaurus-plugins/commit/5ea7f150ac3a18f0a0810ce48373cee04164803c))
+
+
+
+
+
 ## 1.0.1 (2021-01-29)
 
 **Note:** Version bump only for package docusaurus-plugin-astroturf
