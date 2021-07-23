@@ -15,6 +15,31 @@
   outline: none;
   padding-top: 2rem;
   font-family: var(--ifm-font-family-monospace) !important;
+  max-height: var(--docusaurus-jarle-editor-max-height, 400px);
+  overflow-y: auto;
+}
+
+.playgroundButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  box-shadow: none;
+  background: none;
+  font-size: 90%;
+  float: right;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.playgroundButton:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.playgroundButton:before {
+  content: '<';
+}
+
+.playgroundButton:after {
+  content: '/>';
 }
 
 .playgroundEditor::after {
@@ -49,21 +74,6 @@
   padding-top: 2rem;
 }
 
-/*
-.playgroundPreview::after {
-  content: 'example';
-
-  top: 0;
-  left: 0;
-  position: absolute;
-  pointer-events: none;
-  font-size: 90%;
-  letter-spacing: 0.08rem;
-  padding: 0 0.75rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-*/
 .infoMessage {
   font-size: 70%;
   margin-top: 0.5rem;

@@ -21,6 +21,7 @@ export interface Props
   errorClassName?: string;
   codeFirst?: boolean;
   prismTheme?: any;
+  editor?: 'show' | 'hide' | 'collapse';
 }
 
 const Playground = React.forwardRef(
@@ -34,11 +35,27 @@ const Playground = React.forwardRef(
       errorClassName,
       codeFirst = false,
       prismTheme,
+      editor: editorConfig = 'show',
       ...props
     }: Props,
     ref: React.Ref<HTMLDivElement>,
   ) => {
-    const editor = (
+    const [showEditor, setShowEditor] = React.useState(
+      editorConfig === 'show',
+    );
+
+    const showButton = editorConfig === 'collapse' && (
+      <div>
+        <button
+          className={styles.playgroundButton}
+          onClick={() => setShowEditor((prev) => !prev)}
+        >
+          {showEditor ? 'Hide' : 'Show'} Code
+        </button>
+      </div>
+    );
+
+    const editor = showEditor && (
       <Editor
         infoComponent={Info}
         className={clsx(editorClassName, styles.playgroundEditor)}
@@ -50,29 +67,37 @@ const Playground = React.forwardRef(
         <Error className={clsx(errorClassName, styles.error)} />
       </div>
     );
+
     return (
-      <div
-        ref={ref}
-        className={clsx(className, styles.playground, inline && styles.inline)}
-      >
-        <Provider
-          code={children.replace(/\n$/, '')}
-          theme={prismTheme}
-          {...props}
-        >
-          {!codeFirst ? (
-            <>
-              {preview}
-              {editor}
-            </>
-          ) : (
-            <>
-              {editor}
-              {preview}
-            </>
+      <>
+        <div
+          ref={ref}
+          className={clsx(
+            className,
+            styles.playground,
+            inline && styles.inline,
           )}
-        </Provider>
-      </div>
+        >
+          <Provider
+            code={children.replace(/\n$/, '')}
+            theme={prismTheme}
+            {...props}
+          >
+            {!codeFirst ? (
+              <>
+                {preview}
+                {editor}
+              </>
+            ) : (
+              <>
+                {editor}
+                {preview}
+              </>
+            )}
+          </Provider>
+        </div>
+        {showButton}
+      </>
     );
   },
 );
