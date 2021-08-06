@@ -9,7 +9,6 @@ import type { LoadContext, Plugin } from '@docusaurus/types';
 import mdx from '@mdx-js/mdx';
 // @ts-ignore
 import fileEntryCache from 'file-entry-cache';
-import { globby } from 'globby';
 // @ts-ignore
 import * as reactDocgen from 'react-docgen';
 import { pascalCase } from 'tiny-case';
@@ -89,6 +88,7 @@ export default (
     },
 
     async loadContent() {
+      const { globby } = await import('globby');
       let rerunAll = false;
       const [allFiles, extraFiles] = await Promise.all([
         globby(src),
