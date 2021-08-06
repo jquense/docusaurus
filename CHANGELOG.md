@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/jquense/docusaurus-plugins/compare/v1.4.0...v1.4.1) (2021-08-06)
+
+
+### Bug Fixes
+
+* globby esm ([abdd4ad](https://github.com/jquense/docusaurus-plugins/commit/abdd4addb25f245e059a1ca5089b125069eb6f2a))
+
+
+
+
+
 # [1.4.0](https://github.com/jquense/docusaurus-plugins/compare/v1.2.0...v1.4.0) (2021-08-06)
 
 
