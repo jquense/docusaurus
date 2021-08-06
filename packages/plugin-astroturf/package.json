@@ -25,15 +25,15 @@
   },
   "devDependencies": {
     "@4c/babel-preset": "^8.0.3",
-    "@4c/cli": "^2.1.13",
+    "@4c/cli": "^2.2.8",
     "@4c/jest-preset": "^1.4.5",
     "@4c/prettier-config": "^1.1.0",
-    "@babel/core": "^7.12.10",
-    "@types/node": "*",
-    "jest": "^27.0.4"
+    "@babel/core": "^7.15.0",
+    "@types/node": "16.4.13",
+    "jest": "^27.0.6"
   },
   "dependencies": {
-    "@types/find-cache-dir": "^3.2.0",
+    "@types/find-cache-dir": "^3.2.1",
     "astroturf": "^1.0.0-beta.21",
     "find-cache-dir": "^3.3.1"
   }
