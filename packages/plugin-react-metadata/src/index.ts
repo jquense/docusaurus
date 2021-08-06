@@ -9,7 +9,7 @@ import type { LoadContext, Plugin } from '@docusaurus/types';
 import mdx from '@mdx-js/mdx';
 // @ts-ignore
 import fileEntryCache from 'file-entry-cache';
-import globby from 'globby';
+import { globby } from 'globby';
 // @ts-ignore
 import * as reactDocgen from 'react-docgen';
 import { pascalCase } from 'tiny-case';

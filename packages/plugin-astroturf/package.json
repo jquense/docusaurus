@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-plugin-astroturf",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "main": "lib/index.js",
   "repository": {
     "directory": "packages/astroturf",
@@ -36,5 +36,6 @@
     "@types/find-cache-dir": "^3.2.1",
     "astroturf": "^1.0.0-beta.21",
     "find-cache-dir": "^3.3.1"
-  }
+  },
+  "gitHead": "00e893b2a5edcc13f69a6bbc1e02246de05b051f"
 }
