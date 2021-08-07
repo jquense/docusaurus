@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/compare/v1.4.1...v1.4.2) (2021-08-07)
+
+
+### Bug Fixes
+
+* globby esm again ([adb64e5](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/commit/adb64e54ad4592c6e81b1c7b3a8ed2438a4e096f))
+
+
+
+
+
 ## [1.4.1](https://github.com/jquense/docusaurus-plugins/compare/v1.4.0...v1.4.1) (2021-08-06)
 
 
