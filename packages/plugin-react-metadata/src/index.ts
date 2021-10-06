@@ -9,6 +9,7 @@ import type { LoadContext, Plugin } from '@docusaurus/types';
 import mdx from '@mdx-js/mdx';
 // @ts-ignore
 import fileEntryCache from 'file-entry-cache';
+import uniqBy from 'lodash/uniqBy';
 // @ts-ignore
 import * as reactDocgen from 'react-docgen';
 import { pascalCase } from 'tiny-case';
@@ -119,7 +120,7 @@ export default (
               ),
               file,
             };
-          } catch (e) {
+          } catch (e: any) {
             if (e.message.includes('No suitable component definition found'))
               return null;
 
@@ -129,7 +130,7 @@ export default (
         }),
       );
 
-      return content.filter(Boolean) as any;
+      return uniqBy(content.filter(Boolean), (c) => c!.file) as any;
     },
 
     async contentLoaded({ content, actions }) {
