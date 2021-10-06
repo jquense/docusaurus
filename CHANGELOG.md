@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.3](https://github.com/jquense/docusaurus-plugins/compare/v1.4.2...v1.4.3) (2021-10-06)
+
+
+### Bug Fixes
+
+* handle possible race condition ([ac46cf6](https://github.com/jquense/docusaurus-plugins/commit/ac46cf6a268b9b530ce9a19ac79dcd57b27b2c7b))
+
+
+
+
+
 ## [1.4.2](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/compare/v1.4.1...v1.4.2) (2021-08-07)
 
 
