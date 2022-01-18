@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-theme-jarle-codeblock",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "main": "lib/index.js",
   "repository": {
     "directory": "packages/theme-jarle",
@@ -35,5 +35,5 @@
     "clsx": "^1.1.1",
     "jarle": "^1.2.1"
   },
-  "gitHead": "00e893b2a5edcc13f69a6bbc1e02246de05b051f"
+  "gitHead": "0d6867b096ce3a942e7972a659e5d599e35d2bfb"
 }

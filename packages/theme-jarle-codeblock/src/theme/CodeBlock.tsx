@@ -2,8 +2,11 @@
 
 // @ts-ignore
 import CodeBlock from '@theme-init/CodeBlock';
+// @ts-ignore
 import CodeLiveScope from '@theme/CodeLiveScope';
+// @ts-ignore
 import Playground from '@theme/Playground';
+// @ts-ignore
 import usePrismTheme from '@theme/hooks/usePrismTheme';
 // @ts-ignore
 import React from 'react';
