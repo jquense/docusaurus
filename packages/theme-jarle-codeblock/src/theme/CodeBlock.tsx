@@ -1,6 +1,5 @@
 /* eslint-disable import/no-unresolved */
 
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 // @ts-ignore
 import CodeBlock from '@theme-init/CodeBlock';
 import CodeLiveScope from '@theme/CodeLiveScope';
@@ -15,7 +14,6 @@ const getLanguage = (className = '') => {
 };
 
 export default function LiveCodeBlock(props: any) {
-  const { isClient } = useDocusaurusContext();
   const prismTheme = usePrismTheme();
 
   if (props.live) {
@@ -23,7 +21,6 @@ export default function LiveCodeBlock(props: any) {
 
     return (
       <Playground
-        key={isClient}
         scope={CodeLiveScope}
         theme={prismTheme}
         language={language}
