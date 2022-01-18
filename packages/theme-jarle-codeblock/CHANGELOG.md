@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/compare/v1.4.3...v1.6.0) (2022-01-18)
+
+
+### Features
+
+* bump ([79bbeac](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/commit/79bbeac5533743acffd0b57530e218e69832b410))
+
+
+
+
+
 # [1.5.0](https://github.com/4Catalyzer/docusaurus-plugin-react-metadata/compare/v1.4.3...v1.5.0) (2022-01-18)
 
 
