@@ -22,32 +22,27 @@
   "publishConfig": {
     "access": "public"
   },
-  "jest": {
-    "preset": "@4c/jest-preset",
-    "testEnvironment": "node"
-  },
   "release": {
     "publishDir": "lib"
   },
   "devDependencies": {
-    "@4c/babel-preset": "^8.0.3",
-    "@4c/cli": "^2.2.8",
-    "@4c/jest-preset": "^1.4.5",
+    "@4c/babel-preset": "^10.2.0",
+    "@4c/cli": "^3.0.1",
+    "@4c/jest-preset": "^1.8.0",
     "@4c/prettier-config": "^1.1.0",
-    "@4c/tsconfig": "^0.4.0",
-    "@babel/preset-typescript": "^7.15.0",
-    "@types/node": "16.4.13",
-    "jest": "^27.0.6"
+    "@4c/tsconfig": "^0.4.1",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/node": "18.6.5"
   },
   "dependencies": {
-    "@docusaurus/types": "^2.0.0-beta.4",
+    "@docusaurus/types": "^2.0.1",
     "@mdx-js/mdx": "^1.6.22",
-    "@types/lodash": "^4.14.172",
+    "@types/lodash": "^4.14.182",
     "file-entry-cache": "^6.0.0",
     "globby": "^12.0.0",
     "lodash": "^4.17.20",
-    "react-docgen": "^5.3.1",
-    "tiny-case": "^1.0.2"
+    "react-docgen": "^5.4.3",
+    "tiny-case": "^1.0.3"
   },
   "gitHead": "00e893b2a5edcc13f69a6bbc1e02246de05b051f"
 }

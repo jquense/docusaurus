@@ -19,22 +19,17 @@
   "publishConfig": {
     "access": "public"
   },
-  "jest": {
-    "preset": "@4c/jest-preset",
-    "testEnvironment": "node"
-  },
   "devDependencies": {
-    "@4c/babel-preset": "^8.0.3",
-    "@4c/cli": "^2.2.8",
-    "@4c/jest-preset": "^1.4.5",
+    "@4c/babel-preset": "^10.2.0",
+    "@4c/cli": "^3.0.1",
+    "@4c/jest-preset": "^1.8.0",
     "@4c/prettier-config": "^1.1.0",
-    "@babel/core": "^7.15.0",
-    "@types/node": "16.4.13",
-    "jest": "^27.0.6"
+    "@babel/core": "^7.18.10",
+    "@types/node": "18.6.5"
   },
   "dependencies": {
     "@types/find-cache-dir": "^3.2.1",
-    "astroturf": "^1.0.0-beta.21",
+    "astroturf": "^1.0.1",
     "find-cache-dir": "^3.3.1"
   },
   "gitHead": "00e893b2a5edcc13f69a6bbc1e02246de05b051f"

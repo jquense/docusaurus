@@ -1,6 +1,6 @@
 import type { LoadContext, Plugin } from '@docusaurus/types';
 
-module.exports = (_: LoadContext, options = {}): Plugin<any> => {
+export default (_: LoadContext, options = {}): Plugin<any> => {
   return {
     name: 'docusaurus-plugin-astroturf',
     configureWebpack() {
