@@ -1,10 +1,14 @@
-import React from 'react';
-import renderProps from '@theme/renderProps';
+// @ts-ignore
 import Heading from '@theme/Heading';
+// @ts-ignore
 import PropItem from '@theme/PropItem';
+// @ts-ignore
+import renderProps from '@theme/renderProps';
+import React from 'react';
+
+import { Prop } from '../../types';
 
 import styles from './styles.module.css';
-import { Prop } from '../../types';
 
 export interface Metadata {
   name?: string;
@@ -14,9 +18,6 @@ export interface Metadata {
 
 function PropsTable(p: { props?: Prop[]; headingLevel?: string }) {
   const props = renderProps(p.props || [], { tokenMap: styles });
-  const H = React.useMemo(() => Heading(`h${p.headingLevel || '3'}`), [
-    p.headingLevel,
-  ]);
 
   return (
     <>
@@ -25,12 +26,12 @@ function PropsTable(p: { props?: Prop[]; headingLevel?: string }) {
           prop={prop}
           key={prop.name}
           heading={
-            <H id={prop.name}>
+            <Heading as={`h${p.headingLevel || '3'}`} id={prop.name}>
               <span>{prop.name}</span>
               {prop.propData.required && (
                 <strong className={styles.required}>required</strong>
               )}
-            </H>
+            </Heading>
           }
           description={prop.description}
           typeDef={<span className={styles.typeDef}>{prop.type}</span>}
