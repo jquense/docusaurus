@@ -1,13 +1,11 @@
 /* eslint-disable import/no-unresolved */
 
-// @ts-ignore
+import { usePrismTheme } from '@docusaurus/theme-common';
 import CodeBlock from '@theme-init/CodeBlock';
 // @ts-ignore
 import CodeLiveScope from '@theme/CodeLiveScope';
 // @ts-ignore
 import Playground from '@theme/Playground';
-// @ts-ignore
-import usePrismTheme from '@theme/hooks/usePrismTheme';
 // @ts-ignore
 import React from 'react';
 

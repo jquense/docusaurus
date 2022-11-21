@@ -1,3 +1,5 @@
+// @ts-ignore
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import { Editor, Error, InfoMessage, Preview, Provider } from 'jarle';
 import * as React from 'react';
@@ -62,10 +64,14 @@ const Playground = React.forwardRef(
       />
     );
     const preview = (
-      <div className={clsx(previewClassName, styles.playgroundPreview)}>
-        <Preview />
-        <Error className={clsx(errorClassName, styles.error)} />
-      </div>
+      <BrowserOnly fallback={<div>Loading…</div>}>
+        {() => (
+          <div className={clsx(previewClassName, styles.playgroundPreview)}>
+            <Preview />
+            <Error className={clsx(errorClassName, styles.error)} />
+          </div>
+        )}
+      </BrowserOnly>
     );
 
     return (

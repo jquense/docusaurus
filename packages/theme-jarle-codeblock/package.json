@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "@docusaurus/module-type-aliases": "^2.0.1",
+    "@docusaurus/core": "2.2.0",
+    "@docusaurus/theme-common": "2.2.0",
     "clsx": "^1.2.1",
     "jarle": "^2.0.0"
   },
