@@ -1,5 +1,5 @@
-// @ts-ignore
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import { Context } from '@theme/ImportContext';
 import clsx from 'clsx';
 import { Editor, Error, InfoMessage, Preview, Provider } from 'jarle';
 import * as React from 'react';
@@ -42,6 +42,7 @@ const Playground = React.forwardRef(
     }: Props,
     ref: React.Ref<HTMLDivElement>,
   ) => {
+    const resolveImports = React.useContext(Context);
     const [showEditor, setShowEditor] = React.useState(
       editorConfig === 'show',
     );
@@ -87,6 +88,7 @@ const Playground = React.forwardRef(
           <Provider
             code={children.replace(/\n$/, '')}
             theme={prismTheme}
+            resolveImports={resolveImports ?? undefined}
             {...props}
           >
             {!codeFirst ? (

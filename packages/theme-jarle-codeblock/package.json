@@ -2,6 +2,7 @@
   "name": "docusaurus-theme-jarle-codeblock",
   "version": "1.7.2",
   "main": "lib/index.js",
+  "types": "src/theme-jarle-codeblock.d.ts",
   "repository": {
     "directory": "packages/theme-jarle",
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@4c/babel-preset": "^10.2.0",
+    "@docusaurus/types": "2.2.0",
     "@4c/cli": "^3.0.1",
     "@4c/prettier-config": "^1.1.0"
   },
@@ -29,7 +31,8 @@
     "@docusaurus/module-type-aliases": "^2.0.1",
     "@docusaurus/theme-common": "2.2.0",
     "clsx": "^1.2.1",
-    "jarle": "^2.0.0"
-  },
-  "gitHead": "0d6867b096ce3a942e7972a659e5d599e35d2bfb"
+    "es-module-lexer": "^1.1.0",
+    "jarle": "^2.0.0",
+    "unist-util-flatmap": "^1.0.0"
+  }
 }
