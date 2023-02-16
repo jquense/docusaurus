@@ -6,7 +6,7 @@
   "repository": {
     "directory": "packages/theme-jarle",
     "type": "git",
-    "url": "https://github.com/4Catalyzer/docusaurus-plugin-react-metadata.git"
+    "url": "https://github.com/jquense/docusaurus-plugins.git"
   },
   "author": "4Catalyzer",
   "license": "MIT",
@@ -24,15 +24,20 @@
     "@4c/babel-preset": "^10.2.0",
     "@4c/cli": "^3.0.1",
     "@4c/prettier-config": "^1.1.0",
-    "@docusaurus/types": "2.2.0"
+    "@docusaurus/core": "^2.3.1",
+    "@docusaurus/types": "^2.3.1",
+    "@docusaurus/module-type-aliases": "^2.3.1",
+    "@docusaurus/theme-common": "^2.3.1"
   },
   "dependencies": {
-    "@docusaurus/core": "2.2.0",
-    "@docusaurus/module-type-aliases": "^2.0.1",
-    "@docusaurus/theme-common": "2.2.0",
     "clsx": "^1.2.1",
     "es-module-lexer": "^1.1.0",
     "jarle": "^2.0.0",
     "unist-util-flatmap": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^2.2.0",
+    "@docusaurus/module-type-aliases": "^2.2.0",
+    "@docusaurus/theme-common": "^2.2.0"
   }
 }
