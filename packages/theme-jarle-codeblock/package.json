@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-theme-jarle-codeblock",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "main": "lib/index.js",
   "types": "src/theme-jarle-codeblock.d.ts",
   "repository": {
@@ -25,9 +25,9 @@
     "@4c/cli": "^3.0.1",
     "@4c/prettier-config": "^1.1.0",
     "@docusaurus/core": "^2.3.1",
-    "@docusaurus/types": "^2.3.1",
     "@docusaurus/module-type-aliases": "^2.3.1",
-    "@docusaurus/theme-common": "^2.3.1"
+    "@docusaurus/theme-common": "^2.3.1",
+    "@docusaurus/types": "^2.3.1"
   },
   "dependencies": {
     "clsx": "^1.2.1",

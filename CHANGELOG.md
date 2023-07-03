@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.4](https://github.com/jquense/docusaurus-plugins/compare/v1.7.3...v1.7.4) (2023-07-03)
+
+
+### Bug Fixes
+
+* **docusaurus-theme-jarle-codeblock:** move docusaurus deps into peer deps ([#1](https://github.com/jquense/docusaurus-plugins/issues/1)) ([e60c4f5](https://github.com/jquense/docusaurus-plugins/commit/e60c4f5149c2491030a39dcd8af13c790b12f95b))
+
+
+
+
+
 # [1.7.0](https://github.com/jquense/docusaurus-plugins/compare/v1.6.0...v1.7.0) (2022-08-10)
 
 
